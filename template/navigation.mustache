@@ -1,0 +1,18 @@
+<div id="navigation">
+	<div class="wrap">
+		<ul>
+			{{#items}}
+			<li data-id="{{id}}">
+				<div class="main-item focusable" data-href="{{href}}"{{#hasSubmenu}} data-submenu="true"{{/hasSubmenu}}>
+					<div class="icon icon-{{icon}}"></div>
+					<span class="title">{{label}}</span>
+				</div>
+
+				{{#hasSubmenu}}
+				<div class="submenu"></div>
+				{{/hasSubmenu}}
+			</li>
+			{{/items}}
+		</ul>
+	</div>
+</div>

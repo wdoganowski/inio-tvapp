@@ -1,0 +1,54 @@
+<div id="player-ui-paused">
+	<div class="wrap">
+		<div class="paused"><span class="icon-pause"></span> Paused</div>
+
+		<div class="yaw">You Are watching</div>
+		
+		<div class="clear"></div>
+
+		<div class="icons">
+			<span class="icon-hd"></span>
+			<span class="icon-18"></span>
+		</div>
+
+		<h1>{{video.title}}</h1>
+
+		<div class="attributes">
+			<span>{{countries}}</span>
+			<span>{{video.year}}</span>
+			<span>{{duration}}</span>
+		</div>
+
+		<div class="description">
+		<p>{{video.description}}{{video.description}}{{video.description}}</p>
+		</div>
+	</div>
+</div>
+
+<div id="player-ui">
+	<div class="wrap">
+		<div class="progress-bar">
+			<div class="inner">
+				<div class="scrubber">
+					<div class="popup focusable"><span class="scrubber-time">0:00:00</span><span class="beak"></span></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="time">
+			<span class="current-time">0:00:00</span><span class="slash">/</span><span class="duration">0:00:00</span>
+		</div>
+
+		<div class="controls">
+			<ul>
+				<li class="focusable" data-btn="play"><span class="icon-pause"></span></li>
+				<li class="focusable" data-btn="rwd"><span class="icon-rwd"></span></li>
+				<li class="focusable" data-btn="fwd"><span class="icon-fwd"></span></li>
+				<!--<li class="focusable" data-btn="up"><span class="icon-up"></span></li>
+				<li class="focusable" data-btn="language"><span class="icon-bubble"></span></li>-->
+			</ul>
+		</div>
+
+		<div class="title">{{video.title}}</div>
+	</div>
+</div>

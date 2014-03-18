@@ -1,0 +1,60 @@
+<div class="wrap">
+	<div class="icons">
+		<span class="icon-hd"></span>
+		<span class="icon-18"></span>
+	</div>
+
+	<h1>{{video.title}}</h1>
+
+	<div class="left">
+		<div class="attributes">
+			<span>{{countries}}</span>
+			<span>{{video.year}}</span>
+			<span>{{duration}}</span>
+		</div>
+
+		<div class="stars" data-rating="{{rating}}">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="audio">EN</div>
+		<div class="subtitles">EN, JP, SK</div>
+
+		<div class="buttons">
+			{{#hasTrailer}}
+			<button class="focusable" data-btn="trailer">TRAILER</button>
+			{{/hasTrailer}}
+			{{#hasVideo}}
+			<button class="focusable" data-btn="play">PLAY</button>
+			{{/hasVideo}}
+			<!-- <button class="focusable" data-btn="bookmark"><span class="icon-heart"></span></button> -->
+		</div>
+	</div>
+
+	<div class="right">
+		<div class="arrow">
+			<span class="icon-arrow-left"></span>
+		</div>
+
+		<div class="description">
+			<p>{{video.description}}</p>
+		</div>
+
+		<div class="staff">
+			<div class="row">
+				<span class="title">Director:</span>
+				<p>{{directors}}</p>
+			</div>
+			<div class="row">
+				<span class="title">Actors:</span>
+				<p>{{actors}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="movies"></div>

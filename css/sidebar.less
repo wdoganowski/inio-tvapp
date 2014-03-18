@@ -1,0 +1,42 @@
+#sidebar {
+	position: absolute;
+	z-index: 80;
+	top: @headerHeight;
+	left: 0;
+	bottom: 0;
+	width: @sidebarWidth;
+	background: @colorSidebarBg;
+	box-shadow: 4px 0 0 rgba(0, 0, 0, 0.25);
+
+	.wrap {
+		position: absolute;
+		top: 55%;
+		left: 0;
+		bottom: 0;
+		overflow: visible;
+	}
+
+	ul {
+		position: absolute;
+		top: -50%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			width: @sidebarWidth;
+			height: @sidebarWidth * 1.5;
+
+			span {
+				display: block;
+				height: @sidebarWidth * 1.5;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+
+		li:hover, li.focus {
+			background: @colorSidebarHover;
+		}
+	}
+}

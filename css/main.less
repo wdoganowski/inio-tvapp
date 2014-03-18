@@ -1,0 +1,109 @@
+@colorViewportBg: #1b1b1b;
+@colorText: #dbdbdb;
+@colorContrast: #cb4627;
+@colorBreadcrumb: #989898;
+@colorSidebarBg: #64a7a5;
+@colorSidebarHover: #4d8a88;
+@colorNavigationBg: #212121;
+@colorNavigationSubmenuBg: #000;
+@colorNavigationSubmenuHover: #b43d21;
+
+@fontSize: 16px;
+@headerHeight: 84px;
+@sidebarWidth: 80px;
+@havigationHeight: 240px;
+@havigationOffsetTop: 380px;
+@navigationItemWidth: 240px;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    color: @colorText;
+}
+
+#viewport {
+    display: none;
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    background: @colorViewportBg;
+}
+
+.player-fullscreen #viewport {
+    background: transparent;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    z-index: 92;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.throbber {
+    position: absolute;
+    z-index: 110;
+    top: @headerHeight;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.25);
+    font-size: 0;
+
+    div {
+        width: 0;
+        height: 3px;
+        font-size: 0;
+        background: @colorContrast;
+        transition: all 2s;
+        -webkit-transition: all 2s;
+    }
+
+    div.no-anim {
+        width: 100%;
+        transition: none;
+        -webkit-transition: none;
+    }
+}
+.throbber.top {
+    top: 0;
+
+    div {
+        transition: all 5s;
+        -webkit-transition: all 5s;
+    }
+}
+
+.scene {
+    display: none;
+    position: absolute;
+    top: @headerHeight;
+    left: @sidebarWidth;
+    z-index: 10;
+    width: 1280px - @sidebarWidth;
+    height: 720px - @headerHeight;
+    overflow: hidden;
+}
+
+@import 'icons.less';
+@import 'preloader.less';
+@import 'header.less';
+@import 'sidebar.less';
+@import 'navigation.less';
+@import 'carousel.less';
+@import 'catalog.less';
+@import 'dialog.less';
+@import 'scene-home.less';
+@import 'scene-catalog.less';
+@import 'scene-detail.less';
+@import 'scene-player.less';

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>inio.tv</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="font/opensans.css" />
+	<link rel="stylesheet" type="text/css" href="keyboard/keyboard2.css" />
+
+	<!--<STYLES>-->
+	<link rel="stylesheet/less" type="text/css" href="css/main.less" />
+	<!--</STYLES>-->
+	
+    </head>
+    <body>
+    	<div id="preloader">
+    		<div class="logo"></div>
+
+    		<div class="progress">
+    			<div class="progress-bar"><span /></div>	
+    			<div class="percentage">Loading <span class="percentage-value">0%</span></div>
+    		</div>
+
+	    	<footer>
+	    		Application version 0.1<br />
+	    		Support: <span>inio@mautilus.com</span>
+	    	</footer>
+    	</div>
+
+		<div id="viewport"></div>
+
+		<!-- global config + content configuration -->
+		<script src="config.js"></script>
+		<script src="inio.js"></script>
+		
+		<!-- additional scripts -->
+		<script src="vendor/jquery.js"></script>
+		<script src="vendor/mustache.js"></script>
+		<script src="vendor/jasmine.js"></script>
+		<script src="keyboard/keyboard2.js"></script>
+
+		<!--<TEMPLATES>-->
+		
+		<!--<SCRIPTS>-->
+		<script>
+		 less = {
+		    env: "development",
+		    async: false,
+		    fileAsync: false,
+		    poll: 1000
+		  };
+		</script>
+		<script src="vendor/less.js"></script>
+
+		<!-- Inio -->
+		<script src="inio/inio.js"></script>
+		<script src="inio/connector.js"></script>
+		<script src="inio/debug.js"></script>
+		<script src="inio/device.js"></script>
+		<script src="inio/monitor.js"></script>
+		<script src="inio/promise.js"></script>
+		<script src="inio/deferrable.js"></script>
+		<script src="inio/defer.js"></script>
+		<script src="inio/device/default.js"></script>
+		<script src="inio/device/samsung.js"></script>
+		<script src="inio/device/philips.js"></script>
+		<script src="inio/device/lg.js"></script>
+		<script src="inio/device/dunehd.js"></script>
+		<script src="inio/device/alliance.js"></script>
+		<script src="inio/device/viera.js"></script>
+		<script src="inio/player.js"></script>
+		<script src="inio/player/default.js"></script>
+		<script src="inio/player/samsung.js"></script>
+		<script src="inio/player/philips.js"></script>
+		<script src="inio/player/lg.js"></script>
+		<script src="inio/player/dunehd.js"></script>
+		<script src="inio/player/alliance.js"></script>
+		<script src="inio/player/viera.js"></script>
+		<script src="inio/storage.js"></script>
+		<script src="inio/storage/default.js"></script>
+		<script src="inio/storage/samsung.js"></script>
+		<script src="inio/storage/philips.js"></script>
+		<script src="inio/storage/lg.js"></script>
+		<script src="inio/storage/dunehd.js"></script>
+		<script src="inio/storage/alliance.js"></script>
+		<script src="inio/storage/viera.js"></script>
+
+		<!-- Content -->
+		<script src="content/content.js"></script>
+		<script src="content/component.js"></script>
+		<script src="content/parser.js"></script>
+		<script src="content/component/wrapper.js"></script>
+		<script src="content/component/configuration.js"></script>
+		<script src="content/component/filter.js"></script>
+		<script src="content/component/brightcove.js"></script>
+		<script src="content/component/brightcove/filter.js"></script>
+		<script src="content/component/brightcove/playlist.js"></script>
+		<script src="content/component/brightcove/video.js"></script>
+		<script src="content/component/brightcove/search.js"></script>
+		
+		<!-- Framework -->
+		<script src="framework/helpers.js"></script>
+		<script src="framework/developer.js"></script>
+		<script src="framework/events.js"></script>
+		<script src="framework/ajax.js"></script>
+		<script src="framework/model.js"></script>
+		<script src="framework/collection.js"></script>
+		<script src="framework/control.js"></script>
+		<script src="framework/device.js"></script>
+		<script src="framework/focus.js"></script>
+		<script src="framework/i18n.js"></script>
+		<script src="framework/mouse.js"></script>
+		<script src="framework/player.js"></script>
+		<script src="framework/playready.js"></script>
+		<script src="framework/router.js"></script>
+		<script src="framework/view.js"></script>
+		<script src="framework/scene.js"></script>
+		<script src="framework/storage.js"></script>
+		<script src="framework/subtitles.js"></script>
+		<script src="framework/template.js"></script>
+
+		<!-- Application -->
+		<script src="application/view/header.js"></script>
+		<script src="application/view/sidebar.js"></script>
+		<script src="application/view/navigation.js"></script>
+		<script src="application/view/navigation/submenu.js"></script>
+		<script src="application/view/catalog.js"></script>
+		<script src="application/view/carousel.js"></script>
+		<script src="application/view/dialog.js"></script>
+		<script src="application/view/scene/home.js"></script>
+		<script src="application/view/scene/catalog.js"></script>
+		<script src="application/view/scene/detail.js"></script>
+		<script src="application/view/scene/player.js"></script>
+		<script src="application/view/dialog/exit.js"></script>
+		<script src="application/app.js"></script>
+		<!--</SCRIPTS>-->
+    </body>
+</html>

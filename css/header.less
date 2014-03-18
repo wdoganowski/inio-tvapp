@@ -1,0 +1,45 @@
+header {
+	position: absolute;
+	z-index: 90;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: @headerHeight;
+	background: @colorViewportBg url('../img/header-bg.png') no-repeat top left;
+	box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+
+	.logo {
+		position: absolute;
+		top: 23px;
+		left: 0;
+		width: 250px;
+		height: @headerHeight - 23px;
+		background: transparent url('../img/logo-inio-header.png') no-repeat center center;
+	}
+
+	.breadcrumb {
+		position: absolute;
+		bottom: 15px;
+		left: 260px;
+		font-size: 140%;
+		line-height: 130%;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		color: @colorBreadcrumb;
+
+		li {
+			display: inline-block;
+			border-left: 2px solid fadeout(@colorBreadcrumb, 60%);
+			padding: 0 20px;
+			font-weight: 300;
+			letter-spacing: 4px;
+		}
+
+		li:last-child {
+			font-weight: 400;
+			letter-spacing: 0;
+		}
+	}
+}

@@ -1,0 +1,117 @@
+/* keyboard */
+#keyboard {
+    position: absolute;
+    left: 40px;
+    z-index: 1000;
+    top: 455px;
+    width: 1200px;
+    height: 225px;
+    background: rgba(80, 80, 80, 0.85);
+    padding: 5px 10px 5px 5px;
+    font-family: sans-serif;
+}
+
+#keyboard .line {
+    width: 100%;
+    height: 50px;
+    padding: 0 5px 5px 0;
+    line-height: 50px;
+}
+.samsung #keyboard .line {
+    line-height: 55px !important;
+}
+
+#keyboard .line .key {
+    display: inline-block;
+    text-align: center;
+    color: White;
+    padding: 5px 0 5px 5px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+#keyboard .line .key .content {
+    background: black;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+}
+
+#keyboard .line .key.focus {
+    cursor: pointer;
+}
+
+#keyboard .line .key.focus .content {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+#keyboard .line .key .skCAPSLOCK {
+    font-size: 24px;
+}
+
+#keyboard .line .key .skBSP {
+    background: black url('img/keyboard2/backspace.png') no-repeat;
+    background-position: 17px center;
+}
+
+#keyboard .line .key .skRETURN,
+#keyboard .line .key .skdone{
+    background: black url('img/keyboard2/return.png') no-repeat;
+    background-position: 106px 5px;
+}
+
+#keyboard .line .key .skSHIFT {
+    background: black url('img/keyboard2/shift.png') no-repeat;
+    background-position: 58px center;
+}
+
+#keyboard .line .key .skSPACE {
+    background: black url('img/keyboard2/space.png') no-repeat;
+    background-position: 166px center;
+}
+
+#keyboard .line .key .skCA {
+    background: black url('img/keyboard2/backspace-all.png') no-repeat;
+    background-position: 17px center;
+}
+
+#keyboard .line .key .skLC {
+    background: black url('img/keyboard2/left.png') no-repeat;
+    background-position: 17px center;
+}
+
+#keyboard .line .key .skRC {
+    background: black url('img/keyboard2/right.png') no-repeat;
+    background-position: 17px center;
+}
+
+#keyboard .line .key.focus .skBSP {
+    background-color: #ff0000;
+}
+
+#keyboard .line .key.focus .skRETURN,
+#keyboard .line .key.focus .skdone{
+    background-color: #ff0000;
+}
+
+#keyboard .line .key.focus .skSHIFT {
+    background-color: #ff0000;
+}
+
+#keyboard .line .key.focus .skSPACE {
+    background-color: #ff0000;
+}
+
+#keyboard .line .key.focus .skCA {
+    background-color: #ff0000;
+}
+
+#keyboard .line .key.focus .skLC {
+    background-color: #ff0000;
+}
+
+#keyboard .line .key.focus .skRC {
+    background-color: #ff0000;
+} 

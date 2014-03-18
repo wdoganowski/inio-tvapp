@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+	<cpname itemtype="string"><%= pkg.name %></cpname>
+	<cplogo itemtype="string"></cplogo>
+	<cpauthjs itemtype="string"></cpauthjs>
+	<ThumbIcon itemtype="string">icons/106.png</ThumbIcon>
+	<BigThumbIcon itemtype="string">icons/115.png</BigThumbIcon>
+	<ListIcon itemtype="string">icons/85.png</ListIcon>
+	<BigListIcon itemtype="string">icons/95.png</BigListIcon>
+	<category itemtype="string"></category>
+	<autoUpdate itemtype="boolean">n</autoUpdate>
+	<ver itemtype="string"><%= pkg.version %></ver>
+	<mgrver itemtype="string"></mgrver>
+	<fullwidget itemtype="boolean">y</fullwidget>
+	<type itemtype="string">user</type>
+	<srcctl itemtype="boolean">y</srcctl>
+	<ticker itemtype="boolean">n</ticker>
+	<childlock itemtype="boolean">n</childlock>
+	<videomute itemtype="boolean">n</videomute>
+	<dcont itemtype="boolean">y</dcont>
+	<runTitle itemtype="string"><%= pkg.name %></runTitle>
+	<widgetname itemtype="string"><%= pkg.name %></widgetname>
+	<description itemtype="string"></description>
+	<width itemtype="number">1280</width>
+	<height itemtype="number">720</height>
+	<mouse itemtype="string">n</mouse>
+	<author itemtype="group">
+		<name itemtype="string"></name>
+		<email itemtype="string"></email>
+		<link itemtype="string"></link>
+		<organization itemtype="string"></organization>
+	</author>
+</widget>
